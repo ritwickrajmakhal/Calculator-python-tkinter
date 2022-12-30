@@ -22,7 +22,7 @@ class Window(Tk):
         return f
 
     def calculate(self, event):
-        exp = event.widget.cget("text")
+        exp = event.widget.cget("text").strip()
         if exp == 'C':
             self.screenValue.set("")
         elif exp == '=':
@@ -42,7 +42,9 @@ class Window(Tk):
 
 
 if __name__ == '__main__':
-    calculator = Window("475x700", "Calculator by Ritwick", "black")
+    calculator = Window("475x710", "Calculator by Ritwick", "black")
+    calculator.maxsize(width=475,height=710)
+    calculator.minsize(width=475,height=710)
     calculator.createScreen()
     f = calculator.createFrame()
     for i in range(1, 4):
