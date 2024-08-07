@@ -1,4 +1,4 @@
-# Calculator Application
+# Desktop Calculator
 
 ![image](https://github.com/user-attachments/assets/25c8914d-40b6-4926-ac62-6100c6147582)
 
